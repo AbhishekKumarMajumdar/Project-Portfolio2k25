@@ -1,0 +1,674 @@
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript , Portfolio , ">
+    <meta name="author" content="Abhishek kumar Majumdar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   Abhishek Kumar Majumdar
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    html{
+        scroll-behavior: smooth;
+    }
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+      
+        .chiku {
+           
+            color: #c9d1d9;
+        }
+        .progress-bar {
+            background-color: #c9d1d9;
+            height: 2px;
+        }
+        .progress {
+            background-color: #f0a500;
+            height: 2px;
+            width: 0;
+            transition: width 2s ease-in-out;
+        }
+   
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <header class="bg-black py-4 lg:px-10">
+   <div class="container mx-auto flex justify-between items-center px-4">
+    <div class="flex items-center">
+     <!-- <img alt="Logo" class="h-10 w-10 rounded-full" height="40" src="galaxy.jpg" width="40"/> -->
+     <span class="text-2xl font-bold text-yellow-500 ml-2">
+      Abhishek 
+     </span>
+    </div>
+    <nav class="hidden md:flex space-x-6">
+     <a class="text-yellow-500" href="#">
+      HOME
+     </a>
+     <a class="text-white" href="#About">
+      ABOUT
+     </a>
+     <a class="text-white" href="#Resume">
+      RESUME
+     </a>
+     <a class="text-white" href="#Project">
+      PORTFOLIO
+     </a>
+     <a class="text-white" href="#Blog">
+      BLOG
+     </a>
+     <a class="text-white" href="#Contect">
+      CONTACT
+     </a>
+    </nav>
+    <div class="hidden md:flex space-x-4">
+     <a class="text-yellow-500" href="#">
+      <i class="fab fa-github">
+      </i>
+     </a>
+     <a class="text-yellow-500" href="#">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+    </div>
+    <div class="md:hidden">
+     <button class="text-yellow-500 focus:outline-none" id="menu-btn">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="hidden md:hidden" id="mobile-menu">
+    <nav class="flex flex-col space-y-4 mt-4 px-4">
+     <a class="text-yellow-500" href="#">
+      HOME
+     </a>
+     <a class="text-white" href="#About">
+      ABOUT
+     </a>
+     <a class="text-white" href="#Resume">
+      RESUME
+     </a>
+     <a class="text-white" href="#Project">
+      Project
+     </a>
+     <a class="text-white" href="#Blog">
+      BLOG
+     </a>
+     <a class="text-white" href="#Contect">
+      CONTACT
+     </a>
+     <div class="flex space-x-4">
+      <a class="text-yellow-500" href="#">
+       <i class="fab fa-github">
+       </i>
+      </a>
+      <a class="text-yellow-500" href="#">
+       <i class="fab fa-linkedin">
+       </i>
+      </a>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <main class="flex flex-col items-center justify-center min-h-screen bg-cover bg-center" style="background-image: url('earth-11595.jpg');">
+   <div class="text-center px-4">
+    <img data-aos="zoom-in-down" alt="Profile Picture" class="rounded-full mx-auto mb-4 " height="150" src="Image/A2.jpg" width="200"/>
+    <h1 class="text-4xl font-bold ">
+     Hi, I am
+     <span class="text-yellow-500 ">
+      Abhishek kumar Majumdar
+     </span>
+    </h1>
+    <p class="text-white mt-4">
+        I'm an AR/VR Developer with a passion for creating immersive experiences. 
+     <br/>
+     Currently, I am leading an exciting AR project at OSCode.
+    </p>
+    <div class="flex justify-center space-x-4 mt-6">
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-github">
+      </i>
+     </a>
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+    </div>
+   </div>
+  </main>
+
+
+
+  
+<!-- About page -->
+<section id="About" class="bg-gray-900 text-white  lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-center min-h-screen p-6">
+      <div data-aos="fade-right" class="md:w-1/2 flex justify-center md:justify-start">
+        <img alt="Profile picture of a man with short hair and a beard" class=" w-auto h-auto px-16 object-cover"  src="Image/A3.jpg" />
+      </div>
+      <div class="md:w-1/2 mt-6 md:mt-0 md:ml-10">
+        <h1 class="text-4xl font-bold animate__animated animate__bounceIn">Hi There! I'm <span class="text-yellow-500">Abhishek Kumar Majumdar</span> </h1>
+        <h2 data-aos="flip-right"
+        data-aos-duration="2000" class="text-2xl text-white mt-2">Visual Reality Developer</h2>
+        <p class="mt-4 text-gray-400">
+            I am an AR/VR Developer with a strong focus on creating immersive experiences. AR/VR development seeks to captivate, engage, and inspire users, offering them interactive environments that transform ideas into reality and make a lasting impact.         </p>
+        <div class="mt-6" data-aos="fade-right" >
+          <p><span class="font-bold "   data-aos-duration="2000" >Birthday</span> : June 23</p>
+          <p><span class="font-bold " >Email</span> : work.Abhishekmajumdar@gmail.com</p>
+          <p><span class="font-bold " >From</span> : Lalkuan ,Uttarakhand</p>
+          <p><span class="font-bold " >Language</span> : English, Hindi</p>
+          <p><span class="font-bold " >Freelance</span> : Available</p>
+        </div>
+        <button class="mt-6 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full">Download CV</button>
+      </div>
+    </div>
+  </section>
+
+<!-- Resume Page -->
+
+  <section id="Resume" class="bg-gray-900 text-white font-sans lg:px-16 ">
+    <div class="container mx-auto py-12 px-4">
+        <div class="text-center mb-12">
+            <div class="relative text-center ">
+                        <h1  data-aos="fade-right" data-aos-anchor-placement="center-center"  class="  text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-800 opacity-10">REVIEWS</h1>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center">
+                            <h2 data-aos-anchor-placement="center-center" data-aos="fade-left" class="text-yellow-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">REVIEWS</h2>
+                            <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-1 bg-yellow-500 mt-2"></div>
+                            <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-0.5 bg-gray-500 mt-1"></div>
+                        </div>
+                    </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-briefcase text-2xl text-gray-400 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Experience</h2>
+                </div>
+                <div class="relative pl-8">
+                    <div class="absolute left-0 top-0 h-full border-l-2 border-gray-700"></div>
+                    <div class="mb-8">
+                        <div class="flex items-center mb-2">
+                            <div class="w-2 h-2 bg-gray-700 rounded-full mr-4"></div>
+                            <h3 class="text-xl font-bold text-yellow-500">Senior UX/UI Designer</h3>
+                        </div>
+                        <p class="text-gray-400 mb-2">Jan 2020 - Present</p>
+                        <p class="text-gray-300 font-semibold mb-2">Bergnaum, Hills and Howe</p>
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis.</p>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex items-center mb-2">
+                            <div class="w-2 h-2 bg-gray-700 rounded-full mr-4"></div>
+                            <h3 class="text-xl font-bold text-yellow-500">Product Designer</h3>
+                        </div>
+                        <p class="text-gray-400 mb-2">Jan 2016 - December 2019</p>
+                        <p class="text-gray-300 font-semibold mb-2">Langosh, Sipes and Raynor</p>
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-graduation-cap text-2xl text-gray-400 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Education</h2>
+                </div>
+                <div class="relative pl-8">
+                    <div class="absolute left-0 top-0 h-full border-l-2 border-gray-700"></div>
+                    <div class="mb-8">
+                        <div class="flex items-center mb-2">
+                            <div class="w-2 h-2 bg-gray-700 rounded-full mr-4"></div>
+                            <h3 class="text-xl font-bold text-yellow-500">Master of Computer Science</h3>
+                        </div>
+                        <p class="text-gray-400 mb-2">2015 - 2016</p>
+                        <p class="text-gray-300 font-semibold mb-2">University of XYZ</p>
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis.</p>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex items-center mb-2">
+                            <div class="w-2 h-2 bg-gray-700 rounded-full mr-4"></div>
+                            <h3 class="text-xl font-bold text-yellow-500">Bachelor of Computer Science</h3>
+                        </div>
+                        <p class="text-gray-400 mb-2">2010 - 2014</p>
+                        <p class="text-gray-300 font-semibold mb-2">University of ABC</p>
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skill page -->
+<section id="Skill" class="flex bg-gray-900 items-center justify-center min-h-screen lg:px-16 chiku">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+            <div class="relative text-center">
+                <h1 data-aos="fade-right" data-aos-anchor-placement="center-center"  class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-800 opacity-10">Skills</h1>
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <h2 data-aos="fade-left" data-aos-anchor-placement="center-center"  class="text-yellow-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">Skills</h2>
+                    <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-1 bg-yellow-500 mt-2"></div>
+                    <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-0.5 bg-gray-500 mt-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">All the skills that I have in that field of work are mentioned.</h2>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.</p>
+                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+            </div>
+            <div>
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <span>Photoshop</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="95%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <span>Motion Graphic</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="75%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <span>Adobe XD</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <span>UX Design</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <span>HTML</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <span>Digital Marketing</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const progressBars = document.querySelectorAll('.progress');
+                        progressBars.forEach(bar => {
+                            bar.style.width = bar.getAttribute('data-progress');
+                        });
+                        observer.disconnect();
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            observer.observe(document.querySelector('.container'));
+        });
+    </script>
+</section>
+<!-- services page -->
+<section id="Services" class="bg-gray-900  text-center py-16">
+    <div class="relative text-center">
+        <h1 data-aos="fade-right" data-aos-anchor-placement="center-center"   class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-800 opacity-10">SERVICES</h1>
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <h2  data-aos="fade-left" data-aos-anchor-placement="center-center"  class="text-yellow-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">SERVICES</h2>
+            <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-1 bg-yellow-500 mt-2"></div>
+            <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-0.5 bg-gray-500 mt-1"></div>
+        </div>
+    </div>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-16">
+     <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+      <div class="flex justify-center mb-4">
+       <img alt="Icon representing sketches" class="w-16 h-16" height="100" src="https://storage.googleapis.com/a1aa/image/NSzTThIOpkb0EFHuHhtpmhoXZMu9eAOg4vQIYJDbAK805iAKA.jpg" width="100"/>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">
+       Sketches
+      </h3>
+      <p class="text-gray-400">
+       Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+      <div class="flex justify-center mb-4">
+       <img alt="Icon representing UI/UX Design" class="w-16 h-16" height="100" src="https://storage.googleapis.com/a1aa/image/qulee65McxlIhUVSsebjD73xQPJEojymVJAziBAswA6UnLCoA.jpg" width="100"/>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">
+       UI/UX Design
+      </h3>
+      <p class="text-gray-400">
+       Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+      <div class="flex justify-center mb-4">
+       <img alt="Icon representing Product Design" class="w-16 h-16" height="100" src="https://storage.googleapis.com/a1aa/image/InK6LYHf41VSOq5fa1M4V9Ixyyad2VAtzefPwomYvBf9cuIgC.jpg" width="100"/>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">
+       Product Design
+      </h3>
+      <p class="text-gray-400">
+       Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.
+      </p>
+     </div>
+    </div>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-16">
+     <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+      <div class="flex justify-center mb-4">
+       <img alt="Icon representing sketches" class="w-16 h-16" height="100" src="https://storage.googleapis.com/a1aa/image/NSzTThIOpkb0EFHuHhtpmhoXZMu9eAOg4vQIYJDbAK805iAKA.jpg" width="100"/>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">
+       Sketches
+      </h3>
+      <p class="text-gray-400">
+       Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+      <div class="flex justify-center mb-4">
+       <img alt="Icon representing UI/UX Design" class="w-16 h-16" height="100" src="https://storage.googleapis.com/a1aa/image/qulee65McxlIhUVSsebjD73xQPJEojymVJAziBAswA6UnLCoA.jpg" width="100"/>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">
+       UI/UX Design
+      </h3>
+      <p class="text-gray-400">
+       Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+      <div class="flex justify-center mb-4">
+       <img alt="Icon representing Product Design" class="w-16 h-16" height="100" src="https://storage.googleapis.com/a1aa/image/InK6LYHf41VSOq5fa1M4V9Ixyyad2VAtzefPwomYvBf9cuIgC.jpg" width="100"/>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">
+       Product Design
+      </h3>
+      <p class="text-gray-400">
+       Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.
+      </p>
+     </div>
+    </div>
+   </section>
+
+<!-- project page  -->
+<section id="Project" class="text-white bg-gray-900 px-16">
+    <div class="container mx-auto py-12">
+        <div class="relative text-center pb-10">
+            <h1 data-aos="fade-right" data-aos-anchor-placement="center-center"  class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-800 opacity-10">PROJECTS</h1>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <h2 data-aos="fade-left" data-aos-anchor-placement="center-center"  class="text-yellow-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">PROJECTS</h2>
+                <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-1 bg-yellow-500 mt-2"></div>
+                <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-0.5 bg-gray-500 mt-1"></div>
+            </div>
+        </div>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="relative">
+       <img alt="Illustration of a building with a medical cross symbol" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/UgEmXhC4pX5iPddnIWVT0IvLm0wmMpDxacuilhZnu6z9nRAF.jpg" width="400"/>
+       <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center">
+         <p class="text-lg font-semibold">
+          Product Design
+         </p>
+         <p class="text-sm">
+          Design / Marketing
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="relative">
+       <img alt="Illustration of a pill bottle with fabric coming out" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/NHnHjkXkktrBMpZWOr3YXA9adewm3CeG2CkfbF8lRET8fZEQB.jpg" width="400"/>
+       <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center">
+         <p class="text-lg font-semibold">
+          Product Design
+         </p>
+         <p class="text-sm">
+          Design / Marketing
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="relative">
+       <img alt="Illustration of two people and a flower" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/QxLFV2BhIwrXEl1sC9tltdpAnxypEO0Vm5FbQuyrYie5PjAKA.jpg" width="400"/>
+       <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center">
+         <p class="text-lg font-semibold">
+          Product Design
+         </p>
+         <p class="text-sm">
+          Design / Marketing
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="relative">
+       <img alt="Illustration of a bottle cap" class="w-full h-auto" height="400" src="https://storage.googleapis.com/a1aa/image/XspVv9qoqsKdEFleq747i0vRJwPCFgDggOe7jHvKrr1yfMCoA.jpg" width="400"/>
+       <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center">
+         <p class="text-lg font-semibold">
+          Product Design
+         </p>
+         <p class="text-sm">
+          Design / Marketing
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="relative">
+       <img alt="Illustration of a heart with small hearts around it" class="w-full h-auto" height="400" src="https://storage.googleapis.com/a1aa/image/6NZh4z10FhL7IdZreoqQNg750D6ehrVfeEDZgWlQ8e7tenRAF.jpg" width="400"/>
+       <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center">
+         <p class="text-lg font-semibold">
+          Product Design
+         </p>
+         <p class="text-sm">
+          Design / Marketing
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="relative">
+       <img alt="Illustration of a person looking out of a window" class="w-full h-auto" height="400" src="https://storage.googleapis.com/a1aa/image/czRFkXTDI77FPprrRA5SrmfpNXtsHZLrQvdVgDfkIN15fMCoA.jpg" width="400"/>
+       <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center">
+         <p class="text-lg font-semibold">
+          Product Design
+         </p>
+         <p class="text-sm">
+          Design / Marketing
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+<!-- Blog page -->
+<section id="Blog" class="bg-gray-900 text-white">
+    <div class="container mx-auto py-12">
+     <div class="text-center mb-12">
+        <div class="relative text-center">
+            <h1 data-aos="fade-right" data-aos-anchor-placement="center-center"  class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-800 opacity-10">BLOG LATEST NEWS</h1>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <h2 data-aos="fade-left" data-aos-anchor-placement="center-center"  class="text-yellow-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">BLOG LATEST NEWS</h2>
+                <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-1 bg-yellow-500 mt-2"></div>
+                <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-0.5 bg-gray-500 mt-1"></div>
+            </div>
+        </div>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-6 rounded-lg">
+       <img alt="Illustration of a person working at a desk with a computer" class="w-full h-48 object-cover mb-4 rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/EJ7MZwgGxkryPx48Cs7fLCY0eO2zUyujcBHA8vrWRoiEaGBUA.jpg" width="600"/>
+       <div class="text-sm text-gray-400 mb-2">
+        By:
+        <span class="text-yellow-500">
+         Admin
+        </span>
+        |
+        <span class="text-yellow-500">
+         27-09-2020
+        </span>
+       </div>
+       <h2 class="text-xl font-semibold mb-2">
+        What are the latest trends in Graphic design according to you?
+       </h2>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg">
+       <img alt="Illustration of a person working on a laptop with abstract shapes in the background" class="w-full h-48 object-cover mb-4 rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/vw5tiJjSJEbZFdbx5zEgrDiO3evEPZTWjNIxlWmNBwQBNjAKA.jpg" width="600"/>
+       <div class="text-sm text-gray-400 mb-2">
+        By:
+        <span class="text-yellow-500">
+         Admin
+        </span>
+        |
+        <span class="text-yellow-500">
+         27-09-2020
+        </span>
+       </div>
+       <h2 class="text-xl font-semibold mb-2">
+        What do you think makes someone a good designer?
+       </h2>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg">
+       <img alt="Illustration of a person looking stressed while working on a laptop" class="w-full h-48 object-cover mb-4 rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/k1x6lgqppP7NNxdIZ0y21jluLdqGpZ9ZG0e5AyfL3JFBaGBUA.jpg" width="600"/>
+       <div class="text-sm text-gray-400 mb-2">
+        By:
+        <span class="text-yellow-500">
+         Admin
+        </span>
+        |
+        <span class="text-yellow-500">
+         27-09-2020
+        </span>
+       </div>
+       <h2 class="text-xl font-semibold mb-2">
+        Were there any mistakes you’ve made as a designer?
+       </h2>
+      </div>
+     </div>
+    </div>
+   </section>
+<!-- Contect Page -->
+
+  <section id="Contect" class="bg-gray-900 text-white lg:px-16">
+    <div class="container mx-auto py-16 px-4">
+        <div class="relative text-center">
+            <h1 data-aos="fade-right" data-aos-anchor-placement="center-center"  class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-800 opacity-10">CONTACT ME</h1>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <h2 data-aos="fade-left" data-aos-anchor-placement="center-center"  class="text-yellow-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">CONTACT ME</h2>
+                <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-1 bg-yellow-500 mt-2"></div>
+                <div class="w-10 sm:w-12 md:w-14 lg:w-16 h-0.5 bg-gray-500 mt-1"></div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-2xl font-semibold mb-6">Just say Hello</h2>
+                <form>
+                    <div class="mb-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 bg-gray-800 text-gray-300 rounded border border-gray-700 focus:outline-none focus:border-yellow-500">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 bg-gray-800 text-gray-300 rounded border border-gray-700 focus:outline-none focus:border-yellow-500">
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" placeholder="Your Subject" class="w-full p-3 bg-gray-800 text-gray-300 rounded border border-gray-700 focus:outline-none focus:border-yellow-500">
+                    </div>
+                    <div class="mb-4">
+                        <textarea placeholder="Your Message" class="w-full p-3 bg-gray-800 text-gray-300 rounded border border-gray-700 focus:outline-none focus:border-yellow-500 h-32"></textarea>
+                    </div>
+                    <button class="bg-yellow-500 text-gray-900 px-6 py-3 rounded font-semibold hover:bg-yellow-600">Send Message</button>
+                </form>
+            </div>
+            <div>
+                <h2 class="text-2xl font-semibold mb-6">Contact Info</h2>
+                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla tincidunt id faucibus sed suscipit feugiat.</p>
+                <div class="mb-4 flex items-center">
+                    <i class="fas fa-envelope text-yellow-500 text-2xl mr-4"></i>
+                    <div>
+                        <p>Email</p>
+                        <p>devis@example.com</p>
+                        <p>info@support.com</p>
+                    </div>
+                </div>
+                
+                <div class="mb-4 flex items-center">
+                    <i class="fas fa-map-marker-alt text-yellow-500 text-2xl mr-4"></i>
+                    <div>
+                        <p>Address</p>
+                        <p>Tanakpur Uttarakhand </p>
+                    </div>
+                </div>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-facebook-f text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-instagram text-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class=" text-center">
+            <p class="text-gray-500 py-6">&copy; 2023 Abhishek kumar Majumdar. All rights reserved.</p>
+        </div>
+    </div>
+</section>
+  <script>
+   document.getElementById('menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="Js/index.js"></script>
+ </body>
+</html>
